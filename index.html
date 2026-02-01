@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Diary</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: #faf7f4;
+      color: #2c2c2c;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 60px 24px 140px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 28px;
+    }
+
+    .soft {
+      color: #555;
+    }
+
+    .divider {
+      margin: 50px 0;
+      border-top: 1px solid #e6e1dc;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin: 40px 0;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .music-control {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ffffffcc;
+      backdrop-filter: blur(8px);
+      border: 1px solid #e6e1dc;
+      border-radius: 30px;
+      padding: 10px 16px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      z-index: 999;
+    }
+
+    .closing {
+      margin-top: 60px;
+      font-style: italic;
+      color: #444;
+    }
+
+    .signature {
+      margin-top: 60px;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" preload="auto" loop>
+    <source src="./a-thousand-years.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="music-control" onclick="toggleMusic()">
+    ♡ play music
+  </div>
+
+  <div class="container">
+    <h1>Our Diary</h1>
+
+    <p class="soft">
+      I’m not here to convince you or pull you anywhere.  
+      I just wanted you to hear *me* — quietly, without noise.
+    </p>
+
+    <div class="divider"></div>
+
+    <p>
+      Texts feel rushed sometimes.  
+      Conversations get mixed with too many opinions.  
+      This is just me, slowing things down, once.
+    </p>
+
+    <p>
+      There’s something I’ve always felt about us.  
+      Even when we step away, we somehow find our way back.  
+      Not out of habit — but out of comfort, familiarity, and something that still feels real.
+    </p>
+
+    <!-- PHOTOS -->
+    <div class="photo-grid">
+      <img src="./photo1.jpg" alt="">
+      <img src="./photo2.jpg" alt="">
+      <img src="./photo3.jpg" alt="">
+      <img src="./photo4.jpg" alt="">
+    </div>
+
+    <div class="divider"></div>
+
+    <p>
+      I just want you to see what’s right in front of you —  
+      two people who cared deeply,  
+      who couldn’t let go easily,  
+      and one person here who has finally understood a lot of things.
+    </p>
+
+    <p>
+      I’m not saying we were perfect.  
+      We weren’t.  
+      But I see my mistakes clearly now —  
+      and I genuinely want to fix what I once didn’t know how to handle.
+    </p>
+
+    <p>
+      Letting go can feel lighter in the moment.  
+      But some things deserve one honest pause,  
+      one real look,  
+      before being left behind.
+    </p>
+
+    <div class="divider"></div>
+
+    <!-- SHIVJI STORY (FIGHTING THROUGH SELF-WORK, UNCHANGED) -->
+    <p>
+      I grew up hearing stories where love wasn’t rushed.  
+      Where even Shiv didn’t chase or force anything —  
+      he worked on himself, faced his fears, and became steady.
+    </p>
+
+    <p>
+      That story stayed with me.  
+      Love doesn’t return because you beg for it —  
+      it returns when you become safe enough to hold it.
+    </p>
+
+    <div class="divider"></div>
+
+    <p>
+      I understand why you’re scared.  
+      Honestly, I would be too.
+    </p>
+
+    <p>
+      I don’t expect trust immediately.  
+      I don’t expect belief without time.
+    </p>
+
+    <p>
+      I choose not to give up —  
+      not by forcing anything,  
+      but by learning, changing, and showing up better than before.
+    </p>
+
+    <p>
+      All I ask is this —  
+      just look into this once,  
+      when you feel ready.  
+      Nothing more than that.
+    </p>
+
+    <div class="divider"></div>
+
+    <p>
+      Distance scared me once too.  
+      Then I realised something.
+    </p>
+
+    <p>
+      Achievements feel a little empty  
+      when the person who believed in you  
+      isn’t there to hear about them.
+    </p>
+
+    <p>
+      Distance doesn’t weaken real things.  
+      It only shows what already mattered.
+    </p>
+
+    <div class="divider"></div>
+
+    <p>
+      And if you ever felt tired of swimming in thoughts,  
+      you wouldn’t need to decide anything.  
+      Just a place to sit, breathe,  
+      and rest for a moment.
+    </p>
+
+    <p class="closing">
+      I just wanted you to know where I stand —  
+      calmly, honestly, without pulling you anywhere.
+    </p>
+
+    <div class="signature">
+      i love you — siddu baby
+    </div>
+  </div>
+
+  <script>
+    const music = document.getElementById("bgMusic");
+    const button = document.querySelector(".music-control");
+
+    function toggleMusic() {
+      music.volume = 0.35;
+
+      if (music.paused) {
+        music.play()
+          .then(() => {
+            button.innerText = "⏸ pause music";
+          })
+          .catch(() => {
+            alert("Click anywhere once, then tap play again 🤍");
+          });
+      } else {
+        music.pause();
+        button.innerText = "♡ play music";
+      }
+    }
+
+    // unlock audio on first interaction (browser requirement)
+    document.body.addEventListener("click", () => {
+      music.play().then(() => music.pause()).catch(() => {});
+    }, { once: true });
+  </script>
+
+</body>
+</html>
