@@ -94,9 +94,10 @@
 <body>
 
   <!-- Background Music -->
-  <audio id="bgMusic" preload="auto" loop>
-    <source src="./a-thousand-years.mp3" type="audio/mpeg">
-  </audio>
+<audio id="bgMusic" preload="auto" loop controls style="display:none">
+  <source src="a-thousand-years.mp3" type="audio/mpeg">
+</audio>
+
 
   <div class="music-control" onclick="toggleMusic()">
     ♡ play music
@@ -232,32 +233,24 @@
     </div>
   </div>
 
-  <script>
-    const music = document.getElementById("bgMusic");
-    const button = document.querySelector(".music-control");
+<script>
+  const music = document.getElementById("bgMusic");
+  const button = document.querySelector(".music-control");
 
-    function toggleMusic() {
-      music.volume = 0.35;
+  function toggleMusic() {
+    music.volume = 0.35;
 
-      if (music.paused) {
-        music.play()
-          .then(() => {
-            button.innerText = "⏸ pause music";
-          })
-          .catch(() => {
-            alert("Click anywhere once, then tap play again 🤍");
-          });
-      } else {
-        music.pause();
-        button.innerText = "♡ play music";
-      }
+    if (music.paused) {
+      music.play();
+      button.innerText = "⏸ pause music";
+    } else {
+      music.pause();
+      button.innerText = "♡ play music";
     }
+  }
+</script>
 
-    // unlock audio on first interaction (browser requirement)
-    document.body.addEventListener("click", () => {
-      music.play().then(() => music.pause()).catch(() => {});
-    }, { once: true });
-  </script>
 
 </body>
 </html>
+
